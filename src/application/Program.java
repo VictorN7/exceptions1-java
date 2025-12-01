@@ -39,9 +39,7 @@ public class Program {
 			
 			System.out.print("Check-out date (dd/MM/yyyy): ");
 			Date updateCheckout = sdf.parse(scan.next());
-			
-			Date now = new Date();
-			
+						
 			String error = res.updateDates(updateCheckin, updateCheckout);
 			
 			if (error != null) {
